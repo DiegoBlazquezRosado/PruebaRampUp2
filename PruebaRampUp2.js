@@ -9,11 +9,13 @@ function modificarPalabra1(palabra) {
     for (let i=0; i<palabra.length; i++) {
         palabraMod.push(palabra[i].toUpperCase());
     }
-    return alert(palabraMod.join(" "));
+    wordFinal = palabraMod.join(" ");
+    return alert(wordFinal);
 }
 
 function modificarPalabra2(palabra) {
-    return alert(palabra.toUpperCase().split('').join(" "));
+    wordFinal = palabra.toUpperCase().split('').join(" ");
+    return alert(wordFinal);
 }
 
 //Buttons with prompts Ejercicio 1
@@ -42,11 +44,12 @@ function contarPalabras1(frase){
             counter++;
         }
     }
-    alert(counter);
+    return alert(counter);
 }
 
 function contarPalabras2(frase){
-    alert("Hay " + frase.trim().split(' ').length + " palabras.");
+    counterWords = frase.trim().split(' ').length;
+    return alert("Hay " + counterWords + " palabras.");
 }
 
 //Buttons with prompts Ejercicio 2
